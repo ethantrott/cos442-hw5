@@ -1,0 +1,85 @@
+@font-face {
+    font-family: main;
+    src: url('a/7.ttf')
+}
+@font-face {
+    font-family: sub;
+    src: url('a/6.ttf')
+}
+
+
+html{
+  -webkit-font-smoothing: antialiased !important;
+  background-color: #18445A;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#wrapper{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  width: auto;
+  text-align: center;
+  line-height: 0px;
+  color: white;
+  z-index: 1000;
+}
+
+#center{
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 120%;
+  z-index: -1000;
+  background-color: rgba(0,0,0,0.20);
+  -webkit-filter: blur(50px);
+  -moz-filter: blur(50px);
+  -ms-filter: blur(50px);
+  -o-filter: blur(50px);
+  filter: blur(50px);
+}
+
+#wrapper h1{
+  font-size:calc(12px + 5vw);
+  font-family: main;
+  font-weight: normal;
+}
+#wrapper h2{
+  color: #939393;
+  padding-top: 0%;
+  font-size:calc(8px + 1vw);
+  font-family: sub;
+  font-weight: normal;
+}
+
+p{
+  color: rgb(229, 226, 226);
+  font-size:calc(12px + 1.5vw);
+  font-family: main;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+a{
+  color:rgb(229, 226, 226);
+}
+
+#bottomright{
+  position:absolute;
+  bottom: 12px;
+  right: 20px;
+}
+
+#bottomright p{
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+  font-family: main;
+}
